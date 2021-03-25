@@ -1,13 +1,18 @@
 import '../App.css'
 import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
-import {changeQuantity, removeItemFromCart, numberOfItemsChanged} from '../features/cartSlice'
+import {changeQuantity, removeItemFromCart, numberOfItemsChanged, cartCleared} from '../features/cartSlice'
 import { Link } from 'react-router-dom'
 
 function Cart() {
     const state = useSelector(state => state.cart.cartContent)
+    const dispatch = useDispatch()
     const totalPrice = state.reduce((prev,cur) => prev + parseInt(cur.price,10),0)
     console.log(state)
+
+    const clearCart = () => {
+        dispatch(cartCleared())
+    }
     if(state.length === 0){
         return (
             <div className='cart-container'>
@@ -28,6 +33,7 @@ function Cart() {
         return (
             <div className='cart-container'>
                 <div className='cart-items'>{items}</div>
+                <div className='remove-cart'><button className='button' onClick={clearCart}>Clear Cart</button></div>
                 <div className='total'>
                     <span className='totalAmount'>Total</span>{totalPrice}
                 </div>

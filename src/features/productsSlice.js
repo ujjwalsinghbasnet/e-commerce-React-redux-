@@ -2,7 +2,8 @@ import { createSlice,createAsyncThunk } from "@reduxjs/toolkit"
 import { data } from '../data'
 
 const initialState = {
-    products:[]
+    products:[],
+    searchedProducts:[]
 }
 export const fetch = createAsyncThunk('products',async () => {
     const products = data;
@@ -12,7 +13,9 @@ const productSlice = createSlice({
     name: 'products',
     initialState,
     reducers:{
-        
+        searchedProducts(state,action){
+          state.searchedProducts = action.payload
+        }
     },
     extraReducers: {
         [fetch.pending]: (state, action) => {
@@ -27,6 +30,6 @@ const productSlice = createSlice({
           },
     } 
 })
-// export const { addToCart,removeItemFromCart,changeQuantity } = cartSlice.actions
+export const { searchedProducts } = productSlice.actions
 
 export default productSlice.reducer;

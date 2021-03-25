@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import IndividualProduct from './IndividualProduct'
+import Header from './Header'
 
 function FilteredProducts(props) {
     const products = useSelector(state => state.product.products)
@@ -11,6 +12,7 @@ function FilteredProducts(props) {
         const items = filteredarray && filteredarray.map( item => <IndividualProduct key={item.id} name={item.name} price={item.price} rating={item.rating} image = {item.image.url} slug = {item.slug}/>)
         return(
             <>
+            <Header showNavigation={true} showHero={true}/>
                 <h1 className='product__list__header'>{matchUrl.toUpperCase()}</h1>
                 <div className='products__list filtered'>
                     {items ? items : <h1>No items</h1>}

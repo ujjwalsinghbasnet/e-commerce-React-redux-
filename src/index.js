@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import store from './store.js'
 import { fetch } from './features/productsSlice'
+import { fetchCart } from './features/cartSlice'
 
 store.dispatch(fetch())
+store.dispatch(fetchCart())
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

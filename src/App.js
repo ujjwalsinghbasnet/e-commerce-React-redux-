@@ -7,6 +7,7 @@ import Cart from './components/cart'
 import Header from './components/Header';
 import FilteredProducts from "./components/FilteredProducts";
 import CheckoutProducts from "./components/CheckoutProducts";
+import SearchedProducts from "./components/SearchedProducts";
 // // import s20 from './images/s20.jpg'
 // import {addToCart} from './features/cartSlice'
 // import { useState } from 'react';
@@ -43,6 +44,7 @@ function App() {
         <Route path='/products/category/:slug' component={FilteredProducts} />
         <Route path='/checkout' component={CheckoutProducts} />
         <Route path='/buynow/:slug' component={CheckoutProducts} />
+        <Route exact path='/search/' component={SearchedProducts} />
       </Switch>
     </Router>
   );

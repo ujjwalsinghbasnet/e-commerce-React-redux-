@@ -48,7 +48,8 @@ export const data = [
         image: {
             url: iphone11
         },
-        rating: '4.9 (10)'
+        rating: '4.9 (10)',
+        searchTags: ['mobile','mobiles','iphone','iphone 11', 'apple']
     },
     {
         id: 2,
@@ -60,7 +61,8 @@ export const data = [
         image: {
             url: s20
         },
-        rating: '4.8 (15)'
+        rating: '4.8 (15)',
+        searchTags: ['mobile','mobiles','samsung','s20', 'note 20']
     },
     {
         id: 3,
@@ -72,7 +74,8 @@ export const data = [
         image: {
             url: note10
         },
-        rating: '5 (7)'
+        rating: '5 (7)',
+        searchTags: ['mobile','mobiles','xiaomi','redmi', 'note 10', 'redmi note 10']
     },
     {
         id: 4,
@@ -84,7 +87,8 @@ export const data = [
         image: {
             url: hpLaptop
         },
-        rating: '5 (7)'
+        rating: '5 (7)',
+        searchTags: ['laptop','hp','hp laptop','hq-tre', 'i5','laptops']
     },
     {
         id: 5,
@@ -96,7 +100,8 @@ export const data = [
         image: {
             url: leatherJacket
         },
-        rating: '4.5 (9)'
+        rating: '4.5 (9)',
+        searchTags: ['leather jacket','jacket','mens jacket','mens']
     },
     {
         id: 6,
@@ -108,7 +113,8 @@ export const data = [
         image: {
             url: blackHoodie
         },
-        rating: '4.3 (4)'
+        rating: '4.3 (4)',
+        searchTags: ['hoodie','black hoodie','mens hoodie','mens']
     },
     {
         id: 7,
@@ -120,7 +126,8 @@ export const data = [
         image: {
             url: iwatch
         },
-        rating: '4.3 (1)'
+        rating: '4.3 (1)',
+        searchTags: ['electronics','charger','i watch charger','watch charger']
     },
     {
         id: 8,
@@ -132,7 +139,8 @@ export const data = [
         image: {
             url: FourSeatedDinningWooden
         },
-        rating: '4.9 (1)'
+        rating: '4.9 (1)',
+        searchTags: ['decoration','home appliance','table','dinning table','dinning']
     },
     {
         id: 9,
@@ -144,7 +152,8 @@ export const data = [
         image: {
             url: Samsung49CHG90
         },
-        rating: '4.9 (4)'
+        rating: '4.9 (4)',
+        searchTags: ['electronics','monitor','samsung','49 CHG90 QLED Gaming Monitor','gaming monitor']
     },
     {
         id: 10,
@@ -156,7 +165,8 @@ export const data = [
         image: {
             url: BrownLeatherShoes
         },
-        rating: '4.1 (4)'
+        rating: '4.1 (4)',
+        searchTags: ['shoes','mens fashion','mens','party shoes','leather','brown shoes']
     },
     {
         id: 11,
@@ -168,7 +178,8 @@ export const data = [
         image: {
             url: Adultery
         },
-        rating: '4.1 (4)'
+        rating: '4.1 (4)',
+        searchTags: ['books','novel','english novel','paulo coelho books','paulo coelho','adultery','adultery book']
     },
     {
         id: 12,
@@ -180,7 +191,8 @@ export const data = [
         image: {
             url: BlackCasual
         },
-        rating: '4.1 (4)'
+        rating: '4.1 (4)',
+        searchTags: ['shoes','mens fashion','casual shoes','casual','mens']
     },
     {
         id: 13,
@@ -192,7 +204,8 @@ export const data = [
         image: {
             url: AsusVivoBook
         },
-        rating: '4.9 (4)'
+        rating: '4.9 (4)',
+        searchTags: ['laptop','laptops','i7','asus','vivobook','vivobook 14','asus vivobook 14','asus laptops','asus laptop']
     },
     {
         id: 14,
@@ -204,7 +217,8 @@ export const data = [
         image: {
             url: AsusLaptop15
         },
-        rating: '4.1 (10)'
+        rating: '4.1 (10)',
+        searchTags: ['laptop','laptops','asus','x515ja','asus laptops','asus vivobook 14','asus laptop']
     },
     {
         id: 15,
@@ -216,7 +230,8 @@ export const data = [
         image: {
             url: ASUSROGStrixMOnitor
         },
-        rating: '4.9 (3)'
+        rating: '4.9 (3)',
+        searchTags: ['monitor','asus','gaming monitor','asus gaming monitor','gaming monitor asus','ASUS-Rog-Strix-144Hz-Monitor']
     },
     {
         id: 16,
@@ -228,7 +243,8 @@ export const data = [
         image: {
             url: odysseyG5SamsungMonitor
         },
-        rating: '5 (2)'
+        rating: '5 (2)',
+        searchTags: ['monitor','samsung','gaming monitor','samsung gaming monitor','gaming monitor samsung','Odyssey-G5-Samsung-Monitor']
     },
     {
         id: 17,
@@ -240,7 +256,8 @@ export const data = [
         image: {
             url: beatsBlackHeadphone
         },
-        rating: '4.2 (2)'
+        rating: '4.2 (2)',
+        searchTags: ['beats headphone black','beats','beats headphone','headphones','headphone']
     },
     {
         id: 18,
@@ -252,7 +269,8 @@ export const data = [
         image: {
             url: BlackHeadphone
         },
-        rating: '4.5 (10)'
+        rating: '4.5 (10)',
+        searchTags: ['plain headphone black','headphones','headphone']
     },
     {
         id: 19,
@@ -264,7 +282,8 @@ export const data = [
         image: {
             url: sonyHeadphone
         },
-        rating: '4.1 (13)'
+        rating: '4.1 (13)',
+        searchTags: ['sony black headphone','sony','headphones','headphone','sony headphones']
     },
     {
         id: 20,
@@ -276,7 +295,8 @@ export const data = [
         image: {
             url: darkGreenHeadphones
         },
-        rating: '4.6 (7)'
+        rating: '4.6 (7)',
+        searchTags: ['dark green headphone','headphones','headphone']
     },
     {
         id: 21,
@@ -288,7 +308,8 @@ export const data = [
         image: {
             url: Valkyries
         },
-        rating: '4.1 (4)'
+        rating: '4.1 (4)',
+        searchTags: ['books','novel','english novel','paulo coelho books','paulo coelho','valkyries','valkyries book','valkyries paulo coelho']
     },
     {
         id: 22,
@@ -300,19 +321,21 @@ export const data = [
         image: {
             url: LookingForAlaska
         },
-        rating: '5 (4)'
+        rating: '5 (4)',
+        searchTags: ['books','novel','english novel','john green books','john green','looking for alaska','looking for alaska book']
     },
     {
         id: 23,
         category: ['books', 'english-novel','novel'],
-        name: 'The Fault In our Stars',
+        name: 'The Fault In our Stars - John Green',
         description: 'This is a description about the product.',
         price: 340,
         slug: 'the-fault-in-our-stars',
         image: {
             url: TheFaultInOurStars
         },
-        rating: '5 (4)'
+        rating: '5 (4)',
+        searchTags: ['books','novel','english novel','john green books','john green','the fault in our stars','the fault in our stars book','fault in our stars']
     },
     {
         id: 24,
@@ -324,7 +347,8 @@ export const data = [
         image: {
             url: KarnaliBlues
         },
-        rating: '5 (15)'
+        rating: '5 (15)',
+        searchTags: ['books','novel','nepali novel','karnali blues','karnali blues buddhisagar koirala','buddhisagar koirala']
     },
     {
         id: 25,
@@ -336,7 +360,8 @@ export const data = [
         image: {
             url: DellVostro14
         },
-        rating: '4.1 (10)'
+        rating: '4.1 (10)',
+        searchTags: ['laptop','laptops','dell vostro 14','dell vostro','dell','dell laptops']
     },
     {
         id: 26,
@@ -348,7 +373,8 @@ export const data = [
         image: {
             url: HPPavillion
         },
-        rating: '4 (8)'
+        rating: '4 (8)',
+        searchTags:['laptop','laptops','hp pavillion 15','hp pavillion','hp','hp laptops']
     },
     {
         id: 27,
@@ -360,7 +386,8 @@ export const data = [
         image: {
             url: HP14Amd
         },
-        rating: '4.7 (18)'
+        rating: '4.7 (18)',
+        searchTags:['laptop','laptops','Hp 14','hp','hp laptops']
     },
     {
         id: 28,
@@ -372,7 +399,8 @@ export const data = [
         image: {
             url: ASUSM409DA
         },
-        rating: '4.1 (12)'
+        rating: '4.1 (12)',
+        searchTags:['laptop','laptops','laptop asus m409da','asus laptops','asus']
     },
     {
         id: 29,
@@ -384,7 +412,8 @@ export const data = [
         image: {
             url: chromeBookLaptopHP
         },
-        rating: '5 (1)'
+        rating: '5 (1)',
+        searchTags:['laptop','laptops','hp','hp laptops','chrome books','chrome book hp']
     },
     {
         id: 30,
@@ -396,7 +425,8 @@ export const data = [
         image: {
             url: honeyCombShellMouse
         },
-        rating: '4.9 (12)'
+        rating: '4.9 (12)',
+        searchTags:['mouse','laptop mouse','rgb mouse','honeycomb shell mouse','rgb']
     },
     {
         id: 31,
@@ -408,7 +438,8 @@ export const data = [
         image: {
             url: microsoftWirelessMouse
         },
-        rating: '4.2 (8)'
+        rating: '4.2 (8)',
+        searchTags:['mouse','laptop mouse','wireless mouse','microsoft']
     },
     {
         id: 32,
@@ -420,7 +451,8 @@ export const data = [
         image: {
             url: colorKeyboard
         },
-        rating: '4.1 (12)'
+        rating: '4.1 (12)',
+        searchTags:['keyboard','color keyboard','keyboards','rgb kyeboard','rgb']
     },
     {
         id: 33,
@@ -432,7 +464,8 @@ export const data = [
         image: {
             url: fanTechKeyboard
         },
-        rating: '4.1 (12)'
+        rating: '4.1 (12)',
+        searchTags:['keyboard','color keyboard','keyboards','rgb kyeboard','rgb','fantech','fantech mouse','fantech keyboard']
     },
     {
         id: 34,
@@ -444,7 +477,8 @@ export const data = [
         image: {
             url: marbleTopTable
         },
-        rating: '4 (12)'
+        rating: '4 (12)',
+        searchTags:['table','decoration','home','marble table','dinning table','dinning']
     },
     {
         id: 35,
@@ -456,7 +490,7 @@ export const data = [
         image: {
             url: GlassDinning
         },
-        rating: '4.1 (1)'
+        rating: '4.1 (1)',
+        searchTags:['table','glass dining table','dinning table','dinning','home']
     },
-
 ]

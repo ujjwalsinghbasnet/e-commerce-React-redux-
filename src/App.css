@@ -14,7 +14,7 @@ button,.button{
 }
 .noImageHero{
   height: 10vh;
-  margin-bottom: 0;
+  margin-bottom: 5vh;
 }
 .header__section{
   position: relative;
@@ -32,6 +32,14 @@ button,.button{
   z-index: 2;
   background: rgba(255, 255, 255, 0.7);
 
+}
+.header__section__logo{
+  height: 55px;
+  width: 55px;
+}
+.header__section__logo img{
+  height: 100%;
+  width: 100%;
 }
 .cart-btn img {
   height: 45px;
@@ -136,6 +144,22 @@ li{
   position: relative;
   margin-top: -9vh;
 }
+
+.searchBox{
+  height: 7vh;
+  width: 30%;
+}
+.searchInput{
+  display: block;
+  height: 5vh;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+}
+.searchInput::placeholder{
+  padding: 3px;
+}
+
 
 /* navigation */
 
@@ -276,6 +300,13 @@ li{
 }
 .cart-btns .continue_shopping_btn{
   background: #2abbe8;
+}
+.remove-cart button{
+  height: auto;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10px;
+  background-color: rgb(238, 40, 40);
 }
 
 /*single product page*/
