@@ -7,5 +7,6 @@
 2. search/filter
 
 
-##Demo
+## Demo 
+![Snapshot of the app](src/images/live-demo.gif)
 
