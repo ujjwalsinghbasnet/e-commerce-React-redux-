@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 function CheckoutProducts(props) {
     const state = useSelector(state => state.cart.cartContent)
@@ -27,6 +28,7 @@ function CheckoutProducts(props) {
     }
     return (
         <div>
+            <Header showNavigation={false} showHero={false} anotherClass='noImageHero'/>
             <h1 className='checkout_h1'>Billing Information</h1>
             <form className='checkout_form' onSubmit={checkout}>
                 <div className='input_group'>

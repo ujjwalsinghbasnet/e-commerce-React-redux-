@@ -8,12 +8,18 @@ import Header from './components/Header';
 import FilteredProducts from "./components/FilteredProducts";
 import CheckoutProducts from "./components/CheckoutProducts";
 import SearchedProducts from "./components/SearchedProducts";
+import Signup from "./firebase/Signup";
+import { useSelector } from "react-redux";
+import Signin from "./firebase/Signin";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Profile from "./components/Profile";
 // // import s20 from './images/s20.jpg'
 // import {addToCart} from './features/cartSlice'
 // import { useState } from 'react';
 // import Cart from './components/cart';
 
 function App() {
+  const user = useSelector(state => state.user.user)
   // const [state, setstate] = useState(false)
   // const  dispatch = useDispatch()
   // const showCart = e => {
@@ -40,11 +46,14 @@ function App() {
           <Products />
         </Route>
         <Route exact path='/products/:slug' component={SingleProductPage} />
-        <Route path='/cart/' component={Cart} />
+        <ProtectedRoute path='/cart/' component={Cart} />
         <Route path='/products/category/:slug' component={FilteredProducts} />
         <Route path='/checkout' component={CheckoutProducts} />
         <Route path='/buynow/:slug' component={CheckoutProducts} />
         <Route exact path='/search/' component={SearchedProducts} />
+        <Route exact path='/signup/' component={Signup} />
+        <Route exact path='/signin/' component={Signin} />
+        <Route exact path='/profile/' component={Profile} />
       </Switch>
     </Router>
   );

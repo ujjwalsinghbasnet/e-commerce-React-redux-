@@ -11,17 +11,26 @@ function SingleProductPage(props) {
     const dispatch = useDispatch()
     const match = props.match.params.slug
     const data = useSelector(state => state.product.products)
+    const user = useSelector(state => state.user.user)
+
+
     const addCart = e => {
-        const container = e.target.parentNode.parentNode.parentNode.parentNode;
-        const id = Number(container.getAttribute('data-id'));
-        const imageDiv = container.children[0]
-        const detailsDiv = container.children[1]
-        const thumbnail = imageDiv.children[0].src
-        const title = detailsDiv.children[0].firstChild.textContent;
-        const price = Number(detailsDiv.children[1].firstChild.children[0].textContent);
-        const quantity = 1;
-        dispatch(addToCart({thumbnail,title,price,id,quantity,unitCost: price}))
-        dispatch(numberOfItemsChanged())
+        if(user.length!==0)
+        {
+            const container = e.target.parentNode.parentNode.parentNode.parentNode;
+            const id = Number(container.getAttribute('data-id'));
+            const imageDiv = container.children[0]
+            const detailsDiv = container.children[1]
+            const thumbnail = imageDiv.children[0].src
+            const title = detailsDiv.children[0].firstChild.textContent;
+            const price = Number(detailsDiv.children[1].firstChild.children[0].textContent);
+            const quantity = 1;
+            dispatch(addToCart({thumbnail,title,price,id,quantity,unitCost: price}))
+            dispatch(numberOfItemsChanged())
+        } else {
+            alert('Please sign in first!');
+        }
+        
     }
     const showNavigation = () => {
         setShowNav(true)

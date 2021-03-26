@@ -3,35 +3,40 @@ import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import {changeQuantity, removeItemFromCart, numberOfItemsChanged, cartCleared} from '../features/cartSlice'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 
 function Cart() {
     const state = useSelector(state => state.cart.cartContent)
     const dispatch = useDispatch()
     const totalPrice = state.reduce((prev,cur) => prev + parseInt(cur.price,10),0)
-    console.log(state)
 
     const clearCart = () => {
         dispatch(cartCleared())
     }
     if(state.length === 0){
         return (
-            <div className='cart-container'>
-                <div className='nothing'>
-                <h1>Nothing added yet</h1>
-                <div className='cart-btns'>
-                    <Link to='/'>
-                    <button className='continue_shopping_btn button'>Continue Shopping</button>
-                    </Link>
+            <>
+                <Header showNavigation={false} showHero={false} anotherClass='noImageHero' userInfo={true}/>
+                <div className='cart-container'>
+                    <div className='nothing'>
+                    <h1>Nothing added yet</h1>
+                    <div className='cart-btns'>
+                        <Link to='/'>
+                        <button className='continue_shopping_btn button'>Continue Shopping</button>
+                        </Link>
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
+            </>
         )
     }
     else{
         let items = ''
         items = state.map(item => <CartItems key = {item.id} title={item.title} thumbnail={item.thumbnail} price={item.price} id={item.id}quantity={item.quantity}/>)
         return (
-            <div className='cart-container'>
+            <>
+                <Header showNavigation={false} showHero={false} anotherClass='noImageHero' userInfo={true}/>
+                <div className='cart-container'>
                 <div className='cart-items'>{items}</div>
                 <div className='remove-cart'><button className='button' onClick={clearCart}>Clear Cart</button></div>
                 <div className='total'>
@@ -45,7 +50,8 @@ function Cart() {
                     <button className='continue_shopping_btn button'>Continue Shopping</button>
                     </Link>
                 </div>
-            </div>
+                </div>
+            </>
         )
     }
 }
